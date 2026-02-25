@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getPosts } from "../services/api";
+import PostItem from "../components/PostItem";
 
 export default function Posts() {
   const [posts, setPosts] = useState([]);
@@ -17,14 +18,11 @@ export default function Posts() {
   if (error) return <h2>{error}</h2>;
 
   return (
-    <div style={{ padding: 40 }}>
+    <div className="posts-container">
       <h1>Posts</h1>
 
       {posts.map((post) => (
-        <div key={post.id} style={{ marginBottom: 20 }}>
-          <h3>{post.title}</h3>
-          <p>{post.body}</p>
-        </div>
+        <PostItem key={post.id} post={post} />
       ))}
     </div>
   );
