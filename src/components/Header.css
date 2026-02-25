@@ -1,38 +1,51 @@
 .header {
-  height: 80px;
-  background-color: #4a63b3;
+  height: 90px;
+  background-color: #4c63b6;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 60px;
+  padding: 0 80px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
-.logo-icon {
-  width: 30px;
-  height: 30px;
-  background-color: #2b3f8f;
+.logo-symbol {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.logo-symbol div {
+  background-color: #2f3f8f;
   border-radius: 50%;
 }
 
 .logo-text {
-  color: #0d0d0d;
+  font-size: 22px;
   font-weight: 700;
-  font-size: 20px;
+  color: #111;
 }
 
 .nav {
   display: flex;
-  gap: 50px;
+  align-items: center;
+  gap: 30px;
 }
 
 .nav a {
   text-decoration: none;
-  color: #0d0d0d;
+  color: #111;
   font-weight: 600;
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
 }

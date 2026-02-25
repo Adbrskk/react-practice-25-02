@@ -5,14 +5,18 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <div className="logo-icon"></div>
-        <span className="logo-text">МЕСК</span>
+        <div className="logo-symbol">
+          <img src="./logo.svg" alt="Logo" />
+        </div>
       </div>
 
       <nav className="nav">
         <a href="#">Главная</a>
+        <span className="divider"></span>
         <a href="#">Музыка</a>
+        <span className="divider"></span>
         <a href="#">Сообщества</a>
+        <span className="divider"></span>
         <a href="#">Друзья</a>
       </nav>
     </header>
