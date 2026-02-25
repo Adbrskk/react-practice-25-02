@@ -1,8 +1,11 @@
-import React from "react";
-import Posts from "./pages/Posts";
+import Header from "./components/Header";
 
 function App() {
-  return <Posts />;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;

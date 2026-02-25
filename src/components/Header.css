@@ -1,0 +1,38 @@
+.header {
+  height: 80px;
+  background-color: #4a63b3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #2b3f8f;
+  border-radius: 50%;
+}
+
+.logo-text {
+  color: #0d0d0d;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav {
+  display: flex;
+  gap: 50px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #0d0d0d;
+  font-weight: 600;
+}
